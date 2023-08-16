@@ -1,18 +1,25 @@
 * {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 header {
-    background: #A682FF;
+    background: #FF36AB;
     height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 header a {
-    color: #FFF;
+    color: #FFDDE1;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -27,7 +34,20 @@ nav {
 }
 
 header a:hover {
-    background-color: #715AFF;
+    background-color: #FF74D4;
     transform: scale(1.1);
     transition: transform .3s;
+}
+
+section {
+    border: 1px solid #FFB8DE;
+    height: calc(100vh - 5rem);
+    padding: 1rem;
+}
+
+h2 {
+    text-align: center;
+}
+main {
+    margin-top: 5rem;
 }
